@@ -4,15 +4,61 @@ body {
     margin: 0px;
 }
 
-h1#logo {
-    color: rgb(0, 255, 85);
-    background-color: rgb(46, 0, 172);
+#logo a {
+    margin: 1px 5px 5px 5px;
+    color: white;
+    background-color: rgba(0, 212, 81, 0.849);
     text-align: left;
-    font-size: 2.2em;
-    font-family: 'Courier New', Courier, monospace;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 15px;
+    float: left;
+    border: 10px;
+    padding: 0.5em;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
-div#fachada {
+#container-menu {
+    float: right;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    background-color: white;
+    justify-content: right;
+}
+
+#menu {
+    list-style-type: none;
+    padding: 5px 10px;
+}
+
+#menu li {
+    display: inline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3em;
+    justify-content: center;
+}
+#menu li a {
+    display: inline;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1px;
+    max-width: 70%;
+    padding: 0.9em;
+    margin-bottom: .4em;
+    color: #283c86;
+}
+
+#menu li a:hover {
+    background-image: linear-gradient(150deg, #1f41bd, #45a247);
+    border-color: gray;
+    color: white;
+    box-shadow: 1px 1px rgba(19, 18, 18, 0.151);
+}
+
+#fachada {
     position: relative;
     width: 100vw;
     height: 273px;
@@ -33,4 +79,9 @@ div#pesquisa {
     width: fit-content;
     background-color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    background-color: #45a247;
+    color: white;
 }
